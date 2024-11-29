@@ -1,0 +1,148 @@
+
+ html, body{
+    background: linear-gradient(to right, #0f314d, #146077);
+    margin: 0;
+    padding: 0;
+    overflow-y:hidden;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.logo img{
+    border-radius: 10px;
+}
+.container{
+    background-color: white;
+    width: 41%;
+    height: 800px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px 10px 10px 40px;
+    margin-left: 28%; 
+}
+.sign{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: -12px 0 15px 0;
+    font-weight: lighter;
+}
+.input input[type="digit"], input[type="password"]{
+    width: 91%;
+    padding: 15px;
+    border-radius:5px ;
+    border: 1px solid #a1aded;
+    background-color: #eee;
+ }
+ 
+ input[type="digit"]:focus , input[type="password"]:focus{
+    outline:none;
+ }
+.input input[type="button"]{
+    width: 96.5%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #1a76ff;
+    color: white;
+    border: none;
+}
+input[type="button"]:hover{
+    background-color:#6ea3f4 ;
+}
+.forgot a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+.register a{
+    text-decoration:none ;
+    color: #1a76ff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    float: right;
+    margin: -35px 25px 0 0;
+}
+.forgot a:hover{
+    text-decoration: underline;
+}
+.register a:hover{
+    text-decoration: underline;
+}
+
+ 
+
+/* for tablet */
+@media only screen and (min-width:700px){
+    .container{
+        width: 70%;
+        margin-left: 12%;
+        padding-left: 30px;
+    }
+    .input{
+        width: 95%;
+    }
+    input[type="password"]{
+        width: 93%;
+    }
+    .btn{
+        width: 103.5%;
+    }
+    .btn input[type="button"]{
+        padding: 15px 10px;
+    }
+    .register {
+        margin: 0 -20px 0 0;
+    }
+}
+
+/* for mobile */
+
+@media only screen and (max-width: 500px ){
+    .container{
+        width: 91.8%;
+        margin-left: 0%;
+        padding-left: 30px;
+    }
+    .input{
+        width: 95%;
+    }
+    input[type="password"]{
+        width: 94%;
+    }
+    .btn{
+        width: 104.5%;
+    }
+    .btn input[type="button"]{
+        padding: 15px;
+        font-weight: bold;
+        border-radius: 20px;
+    }
+    .register {
+        margin: 0 -30px 0 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
